@@ -7,7 +7,7 @@
     height: 400px;
     margin: 20px auto 0px auto;
     text-align: left;
-    background: #51473d;
+    /*background: #51473d;*/
 
 }
 
@@ -75,11 +75,12 @@ img{
 #menu{
     /*margin-top: 190px;*/
     background: #51473d;
-
+    height: 20px;
 }
 
 #menu ul{
-
+    padding-bottom: 0;
+    margin: 0;
 }
 
 #menu li{
@@ -89,14 +90,9 @@ img{
     padding: 10px;
     list-style-type: none;
     display: block;
-    background: #eae7d2;
-    border-right: 1px solid #51473d;
-    text-transform: capitalize;
-    
 }
 
 #menu a{
-
     display: none;
 }
 
