@@ -5,10 +5,9 @@
 #container{
     width: 600px;
     height: 400px;
-    margin: 20px auto 0px auto;
+    margin: 0px auto 0px auto;
     text-align: left;
     background: #51473d;
-
 }
 
 #topbar{
@@ -25,40 +24,65 @@
 
 #maincontent{
     float: left;
-    width: 400px;
+    width: 350px;
     background: #eae7d2;
-    border-right: 1px dashed #000;
-    height: 417px;
+    /*border-right: 1px dashed #000;*/
+    height: 420px;
     padding-left: 10px;
 }
 
+#maincontent{
+    color: #51473d;
+}
+
 #maincontent p{
+    color: #51473d;
     font-size: 1.2em;
     text-align: left;
     margin: 0;
 }
 
 #subcontent{
-    /*margin-top: 230px;*/
-    margin-top: 56px;
+    position: relative;
+    height: 410px;
+    margin-top: 40px;
     background: #eae7d2;
-    margin-left: 380px;
+    margin-left: 360px;
     padding-bottom: 10px;
     padding-right: 10px;
-}
-
-#subcontent h2, p{
-    margin-left: 40px;
-    
+    border-left: 1px dashed #000;
 }
 
 #subcontent h1{
-    margin-left: 40px;
-    padding-top: 15px;
+    color: #51473d;
+    font-size: 1.1em;
+    margin-left: 10px;
+    padding-top: 30px;
 }
 
-#subcontent ul li{
+#subcontent h2{
+    color: #51473d;
+    font-size: 1.1em;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+#subcontent p{
+    color: #51473d;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+#subcontent ul{
+    position: relative;
+    margin-left: 10px;
+    padding: 0;
     list-style-type: none;
+}
+
+#subcontent li a{
+    color: #51473d;
+    font-size: 1.1em;
 }
 
 img{
@@ -67,6 +91,7 @@ img{
 }
 
 #bottomcontent{
+    color: #51473d;
     clear: both;
     background: #eae7d2;
     padding: 10px;
@@ -74,32 +99,46 @@ img{
 
 #menu{
     /*margin-top: 190px;*/
+    float: left;
+    width: 600px;
+    height: 39px;
     background: #51473d;
+    border-bottom: 1px solid #fff;
+    /*overflow: hidden;*/
+    position: relative;
 
 }
 
 #menu ul{
-
+    display: block;
+    clear: left;
+    list-style: none;
+    margin: 5px 0 0 0;
+    position: relative;
+    text-align: center;
 }
 
 #menu li{
-    padding: 0;
-    margin: 0;
-    float: left;
-    padding: 10px;
-    list-style-type: none;
     display: block;
-    background: #eae7d2;
+    float: left;
     border-right: 1px solid #51473d;
-    text-transform: capitalize;
+    
     
 }
 
 #menu a{
-
     display: none;
 }
 
 #menu ul li a{
     display: block;
+    text-transform: capitalize;
+    padding: 7px 15px 7px 15px;
+    background: #eae7d2;
+    color: ;
+    text-decoration: none;
+}
+
+#menu ul li.active{
+    border-bottom: none;
 }
